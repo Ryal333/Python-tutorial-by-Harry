@@ -12,6 +12,11 @@ while i <= 10:
     comp_choice = random.choice(list1)
     print("s - snake , w - water, g - gun")
     user_choice = input("Enter your choice: ")
+    
+        while user_choice not in ("s", "w", "g"):
+        print("wrong input!! please enter again")
+        user_choice = input("Enter your choice: ")
+        
     user_c = dictionary1[user_choice] #value in dictionary1 curresponding to the inputed value
     while user_choice in ("s", "w", "g"):
         if comp_choice == "snake" and user_choice == "w":
