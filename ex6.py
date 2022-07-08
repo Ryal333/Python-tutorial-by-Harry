@@ -1,6 +1,6 @@
 import random
 list1 = ["snake","water","gun"]
-dictionary={"s":"snake","w":"water","g":"gun"}
+dictionary1={"s":"snake","w":"water","g":"gun"}
 u = 0
 c = 0
 i = 1
@@ -12,11 +12,11 @@ while i <= 10:
     comp_choice = random.choice(list1)
     print("s - snake , w - water, g - gun")
     user_choice = input("Enter your choice: ")
-    user_c = dictionary[user_choice]
+    user_c = dictionary1[user_choice] #value to dictionary1 curresponding to the inputed value
     while user_choice in ("s", "w", "g"):
         if comp_choice == "snake" and user_choice == "w":
             c = c+1
-            flag=1
+            flag=1 #just to check which if statement is executed
         elif comp_choice == "snake" and user_choice == "g":
             u = u+1
             flag=2
